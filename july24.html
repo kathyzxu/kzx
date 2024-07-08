@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: black; 
+            font-family: 'Courier New', Courier, monospace;
+        }
+        p {
+            width: 575px; 
+            font-size: 14px;
+            padding-left: 450px;
+            padding-bottom: 10px;
+            text-align: justify;
+            color: #d42020;
+        }   
+        h1 {
+            padding-top: 20px;
+            font-size: 20px;
+            color: #d42020;
+            text-align: center;
+        }
+        h2 {
+            width: 700px; 
+            font-size: 16px;
+            margin-left: 350px;
+            font-weight: normal;
+            text-align: justify;
+            color: #d42020;
+        }
+        h3 {
+            width: 600px;
+            padding-left: 400px;
+            font-size: 16px;
+            font-weight: normal;
+            color: #d42020;
+        }
+        .expandable {
+            cursor: pointer;
+            color: #d42020;
+        }
+        .hidden {
+            display: none;
+            color: #d42020;
+        }
+        .underline {
+            text-decoration: underline; 
+        }
+    </style>
+</head>
+<body>
+    <h1>July, 2024</h1>
+    <h3 class ="expandable">> July 1</h3>
+    <p class="hidden">
+        Moved (again) into an apartment complex in East Williamsburg a four minute walk from the L. I'm single and my commute 
+        to work is a lot shorter now. I'm staying with this skinny eclectic 50-something-year-old record store owner named 
+        Jay, who survives off ginger mango smoothies and a massive post-punk record collection that he likes to break out in 
+        the mornings. It's getting almost unbearably hot in New York and bedrotting has become ultra inticing, but at least 
+        I've been out and making new friends. And the city is still beautiful.
+    </p>    
+    <h3 class="expandable">> July 5</h3>
+    <p class="hidden">
+        This past week has deadass been the longest week of my life...
+        <br><br>FINALLY got my fake and went out to a bunch of bars in the Bushwick area. Being surrounded by people in their 
+        mid-20s--it's interesting to see how people transition into adulthood. Semi-adjusted baristas, mini-influencers, 
+        "photographers," "creatives"... Everybody is beautiful and broken and a bit aimless. 
+        <br><br>Yesteray we ran around in the rain downtown after the fireworks had subsided. Noel and I had taken a gram 
+        and a half of shrooms--not enough to fully trip, but enough to make the city a bit prettier than it usually is. I'm 
+        pretty sure the combination of the weather and the psychedelics was what gave me a cough the next day, but it was 
+        worth it. Everything was quiet and beautiful. Grace #2 was having her moment, prancing around the West Village and 
+        not saying a word, and I loved it.      
+        <br><br>I feel like EVERYTHING has happened to me in the past year. Literally even in the span of the past two weeks,
+        so much has changed. What's terrifying is that I'm already feeling a bit sick of all the new things I've experienced. 
+        I've gone out so much and met and laughed with so many new people, but there's always a tinge of loneliness 
+        undercutting every interaction.        
+        <br><br>I don't know what will fix that loneliness. I don't want a relationship, I don't need more friends. I miss 
+        the people at home, but when I go back it's not the same. Plus we're never all in the same place at the same time 
+        anymore. I still feel like a kid but I can see my body changing. When I look in the mirror, I see more of a woman 
+        than a girl.
+    </p>
+
+    <script>
+        // Get all expandable elements
+        var expandableElements = document.querySelectorAll('.expandable');
+
+        expandableElements.forEach(function(element) {
+            element.addEventListener('click', function() {
+                // Get the next sibling element
+                var hiddenElement = this.nextElementSibling;
+
+                // Toggle display
+                if (hiddenElement.style.display === 'none' || hiddenElement.style.display === '') {
+                    hiddenElement.style.display = 'block';
+                } else {
+                    hiddenElement.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
