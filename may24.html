@@ -9,13 +9,13 @@
             font-family: 'Courier New', Courier, monospace;
         }
         p {
-            width: 575px; 
+            width: 600px; 
             font-size: 14px;
-            padding-left: 450px;
+            padding-left: 420px;
             padding-bottom: 10px;
             text-align: justify;
             color: #d42020;
-        }   
+        }    
         h1 {
             padding-top: 20px;
             font-size: 20px;
@@ -48,28 +48,92 @@
         .underline {
             text-decoration: underline; 
         }
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
     </style>
 </head>
 <body>
     <h1>May, 2024</h1>
 </body>
     <h3 class="expandable">> May 9</h3>
-    <p class="hidden">[entry]</p>
-    <h3>> May 17</h3>
-    <h3>> May 20</h3>
-    <h3>> May 22</h3>
-    <h3>> May 25</h3>
-    <h3>> May 27</h3>
-    <h3>> May 28</h3>
-
+    <p class="hidden">
+        New journal.
+        <br><br>Strong urge to write today. Can never decide if I want this to be a sketchbook or a journal. What I do know for sure is that my alcohol tolerance has gone WAY DOWN in the past couple of months. I woke up hungover from two drinks. TWO. DRINKS. My body hates me. It's repelling th efood I'm trying to get down. Ugh.
+        <br><br>Feel exahusted and have been relatively uninspired since coming back. I guess cause I'm technically not done with schoolwork just yet. I've been intentionally trying to get myself to sleep in (hence the two drinks) but that's kind of been backfiring too. I swear I had gotten over my insomnia in high school, but I guess it's coming back. I just hate the feeling of forcing myself to go back to sleep in the mornings. It's like torture. My body is so broken down from th epast year. I need some time to recover. I'll try to take care of myself.
+        <br><br>Today I'm going to drive to a coffee shop to complete my last assignment of freshman year. And then I will cook dinner with my om, and go see a movie with Joelle. It's interesting how we, like, automatically re-established our friendship after hanging out like three times.
+        <br><br>Tomorrow I go to the beach with Ankita, then I go to a concert with James and other people. Yeah. Fully back in the Bay Area swing of things, I guess. 
+        <br><br>God I am SO TIRED!!! The weather is great, at least. Sunny. I think I will get gas, pick up an iced coffee, then drive to somewhere with a view.
+    </p>
+    <h3 class="expandable">> May 17</h3>
+    <p class="hidden">
+        In Fresno right now! Visiting Thomas then going to SLO.
+        <br><br>A little upset. Julia bailed on the apartment cause she "didn't get funding" but bailing deadass is not an option casue we CAN'T AFFORD to live just me and Isaiah. Like. Please be FUCKING for real.
+        <br><br>Anyway. Time's passing fast but I was getting way too antsy at home. It feels great to get out. Also have been feeling weird about my relationship with where I want to be in terms of singleness, during/after summer. I think I'd want to be single after, but I don't know if that's fucked up to think. I just don't know how I'd do it... 
+        <br><br>That's all. I'm bored but that's okay.
+    </p>
+    <h3 class="expandable">> May 20</h3>
+    <p class="hidden">
+        I got back from SLO today and I'm so sad.
+        <br><br>Over what? I genuinely do not know. Everything is off and depressing and I'm nauseous all th eitme and wished I had more of an appetite.
+        <br><br>Ugh. 
+        <br><br>Nothing is okay. I'm too old and sick and I have nothing to attach myself to. Unmotivated. Uninspired. I need to finish that fucking article for UCSC and alter my clothes, but all I want to do is lie in bed.
+        <br><br>I feel so lonely.
+        <br><br>Everything is in between.
+    </p>
+    <h3 class="expandable">> May 22</h3>
+    <p class="hidden">
+        depressed & lonely.
+        <br><br>I can't believe I'm nineteen.
+        <br><br>I don't like the person I've ben lately. Hateful and judgmental... 
+        <br><br>I don't know what's up with me. Something's not right. 
+        <br><br>I had a dream Rachel hated me.
+        <br><br>It'll be okay.
+    </p>
+    <h3 class="expandable">> May 25</h3>
+    <p class="hidden">
+        Doing better! Leaving tomorrow morning and excited. Visited James at work today and drew this.
+        <br><br>
+        <img src="C:\Users\Kathy Xu\Downloads\mr philz man.jpg" width="270" height="300">
+        <br><br>Kinda looks like my dad.
+    </p>
+    <h3 class="expandable">> May 27</h3>
+    <p class="hidden">
+        Why is it raining in late May??
+        <br><br>New York is ridiculous.
+        <br><br>I'm in a good mood. Woke up semi-delirious in my shoebox of a dorm room and took about three hours to get ready... I feel so free!
+        <br><br>Seeing this city through a new lens, now that I know I don't need ot return to Columbia University every night. 
+        <br><br>Omg. Thank god.
+        <br><br>About to check into my airbnb, but I need to do some shopping beforehand. 
+        <br><br>A woman at the 110th station told me her mom used to sew her shirts out of pillowcases. A girl in this coffee shop offered to charge my phone for me. The world is beautiful.
+        <br><br>Feeling inspired & excited!! I hope this feeling isn't entirely transitory!
+    </p>
+    <h3 class="expandable">> May 28</h3>
+    <p class="hidden">
+        So excited. Still getting stuff and shopping for the month... 
+        <br><br>Have no idea how much of a burden transportation is going to be/how busy I will be/how much I will be hanging with friends, but I'm REALLY going to be trying to put myself out there and go out and meet new people as much as possible. 
+        <br><br>New York in the summertime!!! Still got hella errands to run first though.
+    </p>
     <script>
-        document.querySelector('.expandable').addEventListener('click', function() {
-            var hiddenParagraph = document.querySelector('.hidden');
-            if (hiddenParagraph.style.display === 'none') {
-                hiddenParagraph.style.display = 'block';
-            } else {
-                hiddenParagraph.style.display = 'none';
-            }
+        // Get all expandable elements
+        var expandableElements = document.querySelectorAll('.expandable');
+
+        expandableElements.forEach(function(element) {
+            element.addEventListener('click', function() {
+                // Get the next sibling element
+                var hiddenElement = this.nextElementSibling;
+
+                // Toggle display
+                if (hiddenElement.style.display === 'none' || hiddenElement.style.display === '') {
+                    hiddenElement.style.display = 'block';
+                } else {
+                    hiddenElement.style.display = 'none';
+                }
+            });
         });
     </script>
 </html>
